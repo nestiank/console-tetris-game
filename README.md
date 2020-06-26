@@ -1,6 +1,9 @@
 # 콘솔 테트리스 게임
 
 ![Language][language-c]
+<br>
+![Participants][participants-solo]
+<br>
 [![School Project][korea-university-image]][korea-university-cs-url]
 ![Course][course-cose101]
 ![Grade][grade-a+]
@@ -25,3 +28,4 @@
 [course-cose101]: https://img.shields.io/badge/Course-Computer%20Programming%20I-brightgreen
 [language-c]: https://img.shields.io/badge/Language-C-orange
 [grade-a+]: https://img.shields.io/badge/Grade-A%2B-yellow
+[participants-solo]: https://img.shields.io/badge/Participants-Solo%20Project-7aa3cc
