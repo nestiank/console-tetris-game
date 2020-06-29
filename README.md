@@ -1,18 +1,21 @@
 # 콘솔 테트리스 게임
 
-![Language][language-c]
+![language-c][language-c]
 <br>
-![Participants][participants-solo]
+![participants-solo][participants-solo]
 <br>
-[![School Project][korea-university-image]][korea-university-cs-url]
-![Course][course-cose101]
-![Grade][grade-a+]
+[![institution-korea-university][korea-university-image]][korea-university-cs-url]
+![course-computer-programming-i][course-cose101]
+![grade-a+][grade-a+]
 
 > 콘솔에서 여러 가지 스킬을 사용하며 플레이하는 테트리스 게임입니다.
 
 ## 스크린샷
 
-(준비 중)
+<img src="documents/screenshot.png" height="400px">
+
+### 작업 기간
+2017년 상반기
 
 ## 라이선스 및 공동체 수정
 
