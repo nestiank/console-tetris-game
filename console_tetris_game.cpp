@@ -203,12 +203,12 @@ void draw_map()
 	gotoxy(STATUS_X_ADJ, 9); printf("|             | ");
 	gotoxy(STATUS_X_ADJ, 10); printf("+-------------+ ");
 	
-	gotoxy(STATUS_X_ADJ, 12); printf("|Player #1");
-	gotoxy(STATUS_X_ADJ, 13); printf("|Score : %03d", score1);
-	gotoxy(STATUS_X_ADJ, 14); printf("|Items : %03d", item1G - item1U);
-	gotoxy(STATUS_X_ADJ + 8, 12); printf("|Player #2");
-	gotoxy(STATUS_X_ADJ + 8, 13); printf("|Score : %03d", score2);
-	gotoxy(STATUS_X_ADJ + 8, 14); printf("|Items : %03d", item2G - item2U);
+	gotoxy(STATUS_X_ADJ, 12); printf("| Player #1");
+	gotoxy(STATUS_X_ADJ, 13); printf("| Score : %03d", score1);
+	gotoxy(STATUS_X_ADJ, 14); printf("| Items : %03d", item1G - item1U);
+	gotoxy(STATUS_X_ADJ + 8, 12); printf("| Player #2");
+	gotoxy(STATUS_X_ADJ + 8, 13); printf("| Score : %03d", score2);
+	gotoxy(STATUS_X_ADJ + 8, 14); printf("| Items : %03d", item2G - item2U);
 	
 	if (turnPlayer) {
 		gotoxy(STATUS_X_ADJ, 17); printf("Now Turn : Player #1");
@@ -508,8 +508,8 @@ void check_line()
 	}
 	else {
 		if (checkItemAccessibility > 1) item2G++;
-		gotoxy(STATUS_X_ADJ + 8, 13); printf("|Score : %03d", score2);
-		gotoxy(STATUS_X_ADJ + 8, 14); printf("|Items : %03d", item2G - item2U);
+		gotoxy(STATUS_X_ADJ + 8, 13); printf("| Score : %03d", score2);
+		gotoxy(STATUS_X_ADJ + 8, 14); printf("| Items : %03d", item2G - item2U);
 		
 		gotoxy(STATUS_X_ADJ, 17); printf("Now Turn : Player #1");
 		gotoxy(STATUS_X_ADJ, 19); printf("   W   : Rotate       |  F  : Item");
