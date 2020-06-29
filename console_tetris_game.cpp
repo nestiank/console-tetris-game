@@ -114,30 +114,30 @@ void setcursortype(CURSOR_TYPE c)
 
 void showMenu()
 {
-	gotoxy(5, 4); printf("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤");
-	gotoxy(5, 5); printf("¦¢                          ¦¢");
-	gotoxy(5, 6); printf("¦¢                          ¦¢");
-	gotoxy(5, 7); printf("¦¢                          ¦¢");
-	gotoxy(5, 8); printf("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥");
+	gotoxy(5, 4); printf("");
+	gotoxy(5, 5); printf("|                            |");
+	gotoxy(5, 6); printf("|                            |");
+	gotoxy(5, 7); printf("|                            |");
+	gotoxy(5, 8); printf("");
 	
 	gotoxy(10, 6); printf("T E T R I S");
 	gotoxy(5, 11); printf("Please Enter Any Key to Start..");
 	
-	gotoxy(5, 13); printf("¦¢Keys For Player #1");
-	gotoxy(5, 14); printf("¦¢  W   : Rotate");
-	gotoxy(5, 15); printf("¦¢A   D : Left / Right");
-	gotoxy(5, 16); printf("¦¢  S   : Drop");
-	gotoxy(5, 17); printf("¦¢  F   : Use Item");
+	gotoxy(5, 13); printf("| Keys For Player #1");
+	gotoxy(5, 14); printf("|   W   : Rotate");
+	gotoxy(5, 15); printf("| A   D : Left / Right");
+	gotoxy(5, 16); printf("|   S   : Drop");
+	gotoxy(5, 17); printf("|   F   : Use Item");
 	
-	gotoxy(5, 19); printf("¦¢Keys For Player #2");
-	gotoxy(5, 20); printf("¦¢  ¡â   : Rotate");
-	gotoxy(5, 21); printf("¦¢¢·  ¢¹ : Left / Right");
-	gotoxy(5, 22); printf("¦¢  ¡ä   : Drop");
-	gotoxy(5, 23); printf("¦¢   M   : Use Item");
+	gotoxy(5, 19); printf("| Keys For Player #2");
+	gotoxy(5, 20); printf("|   ¡â   : Rotate");
+	gotoxy(5, 21); printf("| ¢·  ¢¹ : Left / Right");
+	gotoxy(5, 22); printf("|   ¡ä   : Drop");
+	gotoxy(5, 23); printf("|   M    : Use Item");
 	
-	gotoxy(18, 13); printf("¦¢Common Keys");
-	gotoxy(18, 14); printf("¦¢P : Pause");
-	gotoxy(18, 15); printf("¦¢ESC : Quit");
+	gotoxy(18, 13); printf("| Common Keys");
+	gotoxy(18, 14); printf("| P : Pause");
+	gotoxy(18, 15); printf("| ESC : Quit");
 
 	while(1) {
 		if (kbhit()) break;
@@ -203,24 +203,24 @@ void draw_map()
 	gotoxy(STATUS_X_ADJ, 9); printf("|             | ");
 	gotoxy(STATUS_X_ADJ, 10); printf("+-------------+ ");
 	
-	gotoxy(STATUS_X_ADJ, 12); printf("¦¢Player #1");
-	gotoxy(STATUS_X_ADJ, 13); printf("¦¢Score : %03d", score1);
-	gotoxy(STATUS_X_ADJ, 14); printf("¦¢Items : %03d", item1G - item1U);
-	gotoxy(STATUS_X_ADJ + 8, 12); printf("¦¢Player #2");
-	gotoxy(STATUS_X_ADJ + 8, 13); printf("¦¢Score : %03d", score2);
-	gotoxy(STATUS_X_ADJ + 8, 14); printf("¦¢Items : %03d", item2G - item2U);
+	gotoxy(STATUS_X_ADJ, 12); printf("|Player #1");
+	gotoxy(STATUS_X_ADJ, 13); printf("|Score : %03d", score1);
+	gotoxy(STATUS_X_ADJ, 14); printf("|Items : %03d", item1G - item1U);
+	gotoxy(STATUS_X_ADJ + 8, 12); printf("|Player #2");
+	gotoxy(STATUS_X_ADJ + 8, 13); printf("|Score : %03d", score2);
+	gotoxy(STATUS_X_ADJ + 8, 14); printf("|Items : %03d", item2G - item2U);
 	
 	if (turnPlayer) {
 		gotoxy(STATUS_X_ADJ, 17); printf("Now Turn : Player #1");
-		gotoxy(STATUS_X_ADJ, 19); printf("   W   : Rotate       ¦¢  F  : Item");
-		gotoxy(STATUS_X_ADJ, 20); printf(" A   D : Left / Right ¦¢  P  : Pause");
-		gotoxy(STATUS_X_ADJ, 21); printf("   S   : Drop         ¦¢ ESC : Quit");
+		gotoxy(STATUS_X_ADJ, 19); printf("   W   : Rotate       |  F  : Item");
+		gotoxy(STATUS_X_ADJ, 20); printf(" A   D : Left / Right |  P  : Pause");
+		gotoxy(STATUS_X_ADJ, 21); printf("   S   : Drop         | ESC : Quit");
 	}
 	else {
 		gotoxy(STATUS_X_ADJ, 17); printf("Now Turn : Player #2");
-		gotoxy(STATUS_X_ADJ, 19); printf("  ¡â   : Rotate       ¦¢  M  : Item");
-		gotoxy(STATUS_X_ADJ, 20); printf("¢·  ¢¹ : Left / Right ¦¢  P  : Pause");
-		gotoxy(STATUS_X_ADJ, 21); printf("  ¡ä   : Drop         ¦¢ ESC : Quit");
+		gotoxy(STATUS_X_ADJ, 19); printf("  ¡â   : Rotate       |  M  : Item");
+		gotoxy(STATUS_X_ADJ, 20); printf("¢·  ¢¹ : Left / Right |  P  : Pause");
+		gotoxy(STATUS_X_ADJ, 21); printf("  ¡ä   : Drop         | ESC : Quit");
 	}
 }
 void draw_main() {
@@ -496,25 +496,25 @@ void check_line()
 	}
 	if (turnPlayer) {
 		if (checkItemAccessibility > 1) item1G++;
-		gotoxy(STATUS_X_ADJ, 13); printf("¦¢Score : %03d", score1);
-		gotoxy(STATUS_X_ADJ, 14); printf("¦¢Items : %03d", item1G - item1U);
+		gotoxy(STATUS_X_ADJ, 13); printf("| Score : %03d", score1);
+		gotoxy(STATUS_X_ADJ, 14); printf("| Items : %03d", item1G - item1U);
 		
 		gotoxy(STATUS_X_ADJ, 17); printf("Now Turn : Player #2");
-		gotoxy(STATUS_X_ADJ, 19); printf("  ¡â   : Rotate       ¦¢  M  : Item");
-		gotoxy(STATUS_X_ADJ, 20); printf("¢·  ¢¹ : Left / Right ¦¢  P  : Pause");
-		gotoxy(STATUS_X_ADJ, 21); printf("  ¡ä   : Drop         ¦¢ ESC : Quit");
+		gotoxy(STATUS_X_ADJ, 19); printf("  ¡â   : Rotate       |  M  : Item");
+		gotoxy(STATUS_X_ADJ, 20); printf("¢·  ¢¹ : Left / Right |  P  : Pause");
+		gotoxy(STATUS_X_ADJ, 21); printf("  ¡ä   : Drop         | ESC : Quit");
 		turnPlayer--;
 		turnTimes++;
 	}
 	else {
 		if (checkItemAccessibility > 1) item2G++;
-		gotoxy(STATUS_X_ADJ + 8, 13); printf("¦¢Score : %03d", score2);
-		gotoxy(STATUS_X_ADJ + 8, 14); printf("¦¢Items : %03d", item2G - item2U);
+		gotoxy(STATUS_X_ADJ + 8, 13); printf("|Score : %03d", score2);
+		gotoxy(STATUS_X_ADJ + 8, 14); printf("|Items : %03d", item2G - item2U);
 		
 		gotoxy(STATUS_X_ADJ, 17); printf("Now Turn : Player #1");
-		gotoxy(STATUS_X_ADJ, 19); printf("   W   : Rotate       ¦¢  F  : Item");
-		gotoxy(STATUS_X_ADJ, 20); printf(" A   D : Left / Right ¦¢  P  : Pause");
-		gotoxy(STATUS_X_ADJ, 21); printf("   S   : Drop         ¦¢ ESC : Quit");
+		gotoxy(STATUS_X_ADJ, 19); printf("   W   : Rotate       |  F  : Item");
+		gotoxy(STATUS_X_ADJ, 20); printf(" A   D : Left / Right |  P  : Pause");
+		gotoxy(STATUS_X_ADJ, 21); printf("   S   : Drop         | ESC : Quit");
 		turnPlayer++;
 		turnTimes++;
 	}
@@ -549,19 +549,19 @@ void print_game_result()
 	char timeBuffer[30];
 	strftime(timeBuffer, 30, "%Y/%m/%d %H:%M:%S KST\n", localtime(&startTimestamp));
 	
-	fprintf(resultOut, "¦¢Game Result Log #%d\n", ++gameTimes);
-	fprintf(resultOut, "¦¢Start Time           : %s", timeBuffer);
-	fprintf(resultOut, "¦¢\n");
-	fprintf(resultOut, "¦¢Player #1 Score      : %03d\n", score1);
-	fprintf(resultOut, "¦¢Player #1 Items Gain : %03d\n", item1G);
-	fprintf(resultOut, "¦¢Player #1 Items Used : %03d\n", item1U);
-	fprintf(resultOut, "¦¢Player #2 Score      : %03d\n", score2);
-	fprintf(resultOut, "¦¢Player #2 Items Gain : %03d\n", item2G);
-	fprintf(resultOut, "¦¢Player #2 Items Used : %03d\n", item2U);
-	fprintf(resultOut, "¦¢\n");
-	if (score1 > score2) fprintf(resultOut, "¦¢Final Winner         : Player #%d\n\n", 1);
-	else if (score1 < score2) fprintf(resultOut, "¦¢Final Winner         : Player #%d\n\n", 2);
-	else fprintf(resultOut, "¦¢Final Winner         : Draw\n\n");
+	fprintf(resultOut, "| Game Result Log #%d\n", ++gameTimes);
+	fprintf(resultOut, "| Start Time           : %s", timeBuffer);
+	fprintf(resultOut, "| \n");
+	fprintf(resultOut, "| Player #1 Score      : %03d\n", score1);
+	fprintf(resultOut, "| Player #1 Items Gain : %03d\n", item1G);
+	fprintf(resultOut, "| Player #1 Items Used : %03d\n", item1U);
+	fprintf(resultOut, "| Player #2 Score      : %03d\n", score2);
+	fprintf(resultOut, "| Player #2 Items Gain : %03d\n", item2G);
+	fprintf(resultOut, "| Player #2 Items Used : %03d\n", item2U);
+	fprintf(resultOut, "| \n");
+	if (score1 > score2) fprintf(resultOut, "| Final Winner         : Player #%d\n\n", 1);
+	else if (score1 < score2) fprintf(resultOut, "| Final Winner         : Player #%d\n\n", 2);
+	else fprintf(resultOut, "| Final Winner         : Draw\n\n");
 }
 void pause()
 {
