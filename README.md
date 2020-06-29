@@ -15,6 +15,7 @@
 <img src="documents/screenshot.png" height="400px">
 
 ### 작업 기간
+
 2017년 상반기
 
 ### 라이선스 및 공동체 수정
