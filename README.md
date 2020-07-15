@@ -8,7 +8,7 @@
 ![course-computer-programming-i][course-cose101]
 ![grade-a+][grade-a+]
 
-> 콘솔에서 여러 가지 스킬을 사용하며 플레이하는 테트리스 게임입니다.
+> 콘솔에서 두 사람이 아이템을 사용하며 번갈아서 플레이하는 테트리스 게임입니다.
 
 ### 스크린샷
 
